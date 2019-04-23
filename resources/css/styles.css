@@ -3,6 +3,17 @@
     margin: 0; 
 }
 
+a:hover {
+    color: #aaa;
+}
+
+a {
+    transition: background-color .3s, color .3s;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
 html {
     color: #fff;
 }
