@@ -1,0 +1,137 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+}
+
+html {
+    color: #fff;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/valley.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+form p {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+form label {
+    flex-basis: 33%;
+}
+
+form input, textarea, select {
+    flex: 1;
+    margin: 0 1em;
+    border-radius: 5px;
+}
+
+form select {
+    text-align: center;
+}
+
+form input[type=submit] {
+    color:#0089ff;
+}
+
+h1 {
+        text-transform: uppercase;
+        font-size: 4.5em;
+}
+
+h1,
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+
+header {
+    display: flex;
+    align-items: flex-start;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+header nav li {
+    list-style-type: none;
+    padding: 1em;
+}
+
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    }
+
+
+.big-title {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.map {
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+    min-height: 50vh;
+    max-height: 150vh;
+    max-width: 80vh;
+    min-width:50;
+    flex-direction: column;  
+        
+    }
+
+.wiki {
+    text-align:center;
+    font-size: large;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    background-color: darkseagreen; 
+    opacity:  0.8;
+        }
+
+.pics {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 30px;
+    margin: 0px 20px 20px 20px;
+}
+
+
+
+
+@media screen and (max-width: 30rem) {
+    header, 
+    main, 
+    footer {
+        flex-direction: row;
+    }    
+}
